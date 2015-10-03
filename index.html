@@ -41,14 +41,32 @@
                 </div>
             </nav>
         </div>
-         <!-- START WELCOME -->
-        <div id="events" class="grey darken-3 white-text" style="position: relative;background:url(img/large-outside-far2.jpg);background-position:center;background-size:cover;height:450px;margin-bottom:0">
-            <br>
-            <div class="section">
-                <br>
-                <div style="height:150px;" class="show-toggle hide-on-med-and-down"></div>
-            </div>
+         <!-- START MAIN BANNER -->
+         <!-- <div class="slider">
+            <a title="Book a room" class="btn-floating btn-large white toggleCalendar" style="position: absolute;bottom: 15px; right: 24px;z-index:100">
+                <i class="zmdi zmdi-calendar grey-text text-darken-1"></i>
+                <i class="zmdi zmdi-close grey-text text-darken-1" style="display:none;"></i>
+            </a>
 
+            <ul class="slides">
+              <li>
+                <img src="img/large-outside-far2.jpg">
+              </li>
+              <li>
+                <img src="img/pool3.jpg">
+              </li>
+              <li>
+                <img src="img/food3.jpg">
+              </li>
+              <li>
+                <img src="img/dine.jpg">
+              </li>
+            </ul>
+        </div> -->
+        <!-- END MAIN BANNER -->
+        
+         <!-- START MAIN BANNER -->
+        <div class="grey darken-3 white-text" style="position: relative;background:url(img/large-outside-far2.jpg);background-position:center;background-size:cover;height:450px;margin-bottom:0">
             <!-- STARTS FAB -->
             <a title="Book a room" class="btn-floating btn-large white toggleCalendar" style="position: absolute;bottom: -30px; right: 24px;">
                 <i class="zmdi zmdi-calendar grey-text text-darken-1"></i>
@@ -56,8 +74,10 @@
             </a>
             <!-- ENDS FAB -->
         </div>
+        <!-- END MAIN BANNER -->
 
-        <div id="rooms" class="grey lighten-3 black-text">
+        <!-- START BOOK FORM -->
+        <div class="grey lighten-3 black-text">
             <!-- <br><br> -->
             <div class="container">
                 <!-- <div style="height:180px;display:non" class="show-toggl"></div> -->
@@ -73,27 +93,27 @@
                                             <div class="col s12"> &nbsp;
                                                 <!-- <h4 class="section-head grey-text text-darken-1">Book a room</h4> -->
                                             </div>
-                                            <div class="input-field col s12 l4">
+                                            <div class="input-field col s12 l3">
                                               <i class="zmdi zmdi-calendar prefix"></i>
                                               <input id="checkin" type="text" class="validate">
                                               <label for="checkin">Checkin Date</label>
                                             </div>
-                                            <div class="input-field col s12 l4">
+                                            <div class="input-field col s12 l3">
                                               <i class="zmdi zmdi-calendar prefix"></i>
                                               <input id="checkout" type="text" class="validate">
                                               <label for="checkout">Checkout Date</label>
                                             </div>
-                                            <!-- <div class="input-field col s12 l4">
-                                              <i class="zmdi zmdi-calendar prefix"></i>
-                                              <input id="checkout" type="text" class="validate">
-                                              <label for="checkout">Number of people</label>
-                                            </div> -->
-                                            <div class="input-field col s12 l2">
-                                                <select>
-                                                  <option value="1">1</option>
-                                                  <option value="2">2</option>
-                                                  <option value="3">3</option>
-                                                </select>
+                                            <div class="input-field col l3 s12">
+                                                <span class="left"><i class="zmdi zmdi-accounts prefix"></i></span>
+                                                <span class="col offset-s1 s11 offset-l2 l10">
+                                                    <select>
+                                                      <option>Number of Guests</option>
+                                                      <option value="1">1</option>
+                                                      <option value="2">2</option>
+                                                      <option value="3">3</option>
+                                                    </select>
+                                                </span>
+                                                <span></span>
                                             </div>
                                             <div class="input-field col offset-s6 s6 l2">
                                                <a class="waves-effect waves-ripple btn btn-raised gre white-text text-darken-1 right">
@@ -107,33 +127,164 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="row" style="padding-bottom:25px">
-                    <br><br>
-                    <div class="col s12 m12 s4 center">
-                        <h3 class="section-head grey-text text-darken-1">FEATURES</h3>
-                    </div>
-                    <br><br>
-                </div> -->
             </div>
         </div>
+        <!-- END BOOK FORM -->
 
-        <div id="features" clas="grey lighten-3 black-text">
+        <!-- START RESTAURANTS -->
+        <div id="restaurants" clas="grey lighten-3 black-text">
             <div class="row" style="padding-bottom:25px">
                     <br><br>
                     <div class="col s12 m12 s4 center">
-                        <h3 class="section-head grey-text text-darken-1">FEATURES</h3>
+                        <h3 class="section-head grey-text text-darken-1 a-header">
+                            RESTAURANTS
+                            <i class="a-border zmdi zmdi-star red-text text-lighten-2"></i>
+                        </h3>
                     </div>
                     <br><br>
                 </div>
             <div class="container">
                 <div class="row"> 
-                    <div class="col l4 s12" style="position: relative;background:url(img/food.jpg);background-position:center;background-size:cover;height:250px;">
-                        
+                    <div class="col l6 s12">
+                        <div style="overflow: hidden;padding:0;margin:0;" class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/dine.jpg" alt=" ">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Kilimanjaro <i class="mdi-navigation-more-vert right"></i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Kilimanjaro <i class="mdi-hardware-keyboard-arrow-down right"></i></span>
+                                <hr>
+                                <p class="flow-text">Located at the Hotel Lounge, the Kilimanjaro Restaurant has a seating capacity of 500 diners. It offers extensice continental cuisines.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l6 s12">
+                        <div style="overflow: hidden;padding:0;margin:0;" class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/restaurant.jpg" alt=" ">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Tarangire <i class="mdi-navigation-more-vert right"></i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Tarangire <i class="mdi-hardware-keyboard-arrow-down right"></i></span>
+                                <hr>
+                                <p class="flow-text">Next to the pool garden is the multi-themed Tarangire Restaurant, which offers, Italian, Chinese, Thai and Indian cuisines.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- ENDS WELCOME -->
+        <!-- END RESTAURANTS -->
+
+        <!-- START FACILITIES -->
+        <div id="facilities" clas="grey lighten-3 black-text">
+            <div class="row" style="padding-bottom:25px">
+                    <br><br>
+                    <div class="col s12 m12 s4 center">
+                        <h3 class="section-head grey-text text-darken-1 a-header">
+                            FACILITIES
+                            <i class="a-border zmdi zmdi-star green-text text-lighten-2"></i>
+                        </h3>
+                    </div>
+                    <br><br>
+                </div>
+            <div class="container">
+                <div class="row caption-images"> 
+                    <div class="col l4 s12">
+                        <a href="oldlook.html">
+                             <div class="card-content">
+                                <img src="img/pool3.jpg" clasy="materialboxed" data-caption="Health &amp; Fitness - Outdoors Pool">
+                                <div class="flow-text caption">Health and Fitness</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l4 s12">
+                        <a href="oldlook.html">
+                             <div class="card-content">
+                                <img src="img/bar.jpg" clas="materialboxed" data-caption="Mini Bar">
+                                <div class="flow-text caption">Mini Bar</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l4 s12">
+                        <a href="oldlook.html">
+                             <div class="card-content">
+                                <img src="img/banner3.jpg" clas="materialboxed" data-caption="Some Forlorn Tulips">
+                                <div class="flow-text caption">Forlorn Tulips</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+        <!-- END FACILITIES -->
+
+        <footer class="page-footer black">
+    <!-- STARTS SUBSCRIBE SECTION -->
+    <div class="container">
+        <div class="row white-text">
+            <div class="col s6 m7 left">
+                <h3>Get Our Newsletter</h3>
+                <p class="left-align">
+                    News, events, or goodies&hellip; Be the first to know.
+                </p>
+                <div class="row grey-text">
+                    <div class="input-field col m8 s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email" data-error="Whoops! Please use this format: username@example.com">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m8 s12">
+                        <a class="waves-effect waves-ripple btn white black-text right">Sign up</a></div>
+                </div>
+            </div>
+            <div class="col s6 m5 contacts-section">
+                <h3 class="white-text">We'd love to hear from you</h3>
+                <ul>
+                    <li><i class="zmdi zmdi-phone"></i>
+                        <span> +255 (0) 755 849 191 </span> </li>
+
+                    <li><i class="zmdi zmdi-email"></i>
+                        <span> info@naurasprings.org </span> </li>
+
+                    <li><i class="zmdi zmdi-pin"></i>
+                        <span>Area 51, 123 Street, Sanawari, Arusha </span> </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- ENDS SUBSCRIBE SECTION -->
+
+    <div class="footer-copyright">
+        <div class="container">
+            <span class="text-lighten-3">
+                &copy; 2015 Naura Springs Hotel. All rights reserved.
+            </span>
+            <span class="social-links right">
+                <a href="#">
+                    <i class="zmdi zmdi-instagram" data-caption="instagram"></i></a>
+
+                <a href="#">
+                    <i class="zmdi zmdi-twitter" data-caption="twitter"></i></a>
+
+                <a href="#">
+                    <i class="zmdi zmdi-google-plus" data-caption="google-plus"></i></a>
+
+                <a href="#">
+                    <i class="zmdi zmdi-facebook" data-caption="facebook"></i></a>
+
+            </span>
+        </div>
+    </div>
+</footer>
 
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="js/modernizr.min.js"></script>

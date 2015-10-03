@@ -9,8 +9,8 @@
  *  FONTS
  * --------------------------------- */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);*/
 
 /* -----------------------------------
  *  GLOBALS & HELPERS
@@ -25,9 +25,31 @@ a {
 
     a.brand-logo {
         text-decoration: none; }
-
+.bg-stuff{
+    background-position:center;background-size:cover;
+}
 .no-margin{
     margin: 0 !important;
+}
+.a-header{
+    position: relative;
+}
+.a-header .a-border{
+  /*position: absolute;*/
+  /*left: 30%;*/
+  display: block;
+  margin: auto;
+  width: 30%;
+  padding-top: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid #343434;
+}
+.a-border:before{
+    position: absolute;
+    top:0px;left: 40%;
+    background: #fff;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .brand-logo {
     font-family: 'Open Sans', sans-serif; }
@@ -150,6 +172,19 @@ nav ul li:hover, nav ul li.active {
 /* -----------------------------------
  *  FEATURES PAGE
  * ----------------------------------- */
-#features .card-image img{
+.card-image img{
     height: 200px;
+}
+
+.caption-images .card-content{
+    position: relative;
+    height:250px;
+}
+.caption-images .card-content img{
+    height: 100%;width:100%;
+}
+.caption-images .card-content .caption{
+    padding:10px;position:absolute;width:100%;bottom:0;
+    text-shadow:0 2px 2px #000;
+    color: #fefefe;
 }
