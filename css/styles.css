@@ -1,0 +1,155 @@
+/**
+ * Passionists Official Website
+ * Copyright 2015 Passionists Fathers Tanzania. All rights reserved.
+ *
+ * Built with lots of love and coffee.
+ */
+
+/* ---------------------------------
+ *  FONTS
+ * --------------------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
+
+/* -----------------------------------
+ *  GLOBALS & HELPERS
+ * ----------------------------------- */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300; }
+
+a {
+    text-decoration: underline; } /* anchors are uniform throughout */
+
+    a.brand-logo {
+        text-decoration: none; }
+
+.no-margin{
+    margin: 0 !important;
+}
+.brand-logo {
+    font-family: 'Open Sans', sans-serif; }
+
+    .brand-logo sup {
+        text-transform: capitalize; }
+
+.tab-indicator {
+    background-color: #000; }
+
+nav ul a {
+    color: #9E9E9E;
+    text-decoration: none;
+    text-transform: uppercase; }
+
+    nav ul li .active {
+        border-bottom: 3px solid #000; }
+
+.black .input-field input[type='email']:focus + label {
+    color: #fff; }
+
+.black .input-field input[type='email']:focus {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff; }
+
+@media only screen and (max-width : 992px) {
+  .left-on-med-and-down {
+    text-align: left; } }
+
+@media only screen and (max-width : 600px) {
+  .left-on-small-only {
+    text-align: left; } }
+
+/* -----------------------------------
+ *  HEADER
+ * ----------------------------------- */
+
+/* navigation */
+
+/* welcome-section */
+.welcome-message {
+    min-height: 550px;
+    background-color: #333; }
+
+    .welcome-message h1,
+    .welcome-message h3,
+    .welcome-message h5,
+    .welcome-message p,
+    .welcome-message a {
+        text-align: left;
+        color: #fff; }
+
+    .welcome-message .caption {
+        position: absolute;
+        top: 0; bottom: 0; } /* fixes the main message to the right */
+
+    .welcome-message .caption {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 13px 23px; } /* gives the captions a sleek BLACK overlay */
+
+
+/* -----------------------------------
+ *  FOOTER
+ * ----------------------------------- */
+
+footer.page-footer {
+    margin: 0; }
+
+    footer.page-footer .contacts-section {
+        font-size: medium; }
+
+        footer.page-footer .contacts-section span {
+            margin-left: 17px; }
+
+    footer.page-footer .footer-copyright {
+        background: #FFFFFF;
+        color: #9E9E9E;
+        font-size: 13px; }
+
+   footer.page-footer .footer-copyright .social-links a {
+       color: #333;
+       text-decoration: none;
+       margin-right: 51px;
+       font-size: 21px; }
+
+
+/* -----------------------------------
+ *  MATERIALIZE OVERRIDES
+ * ----------------------------------- */
+nav ul li:hover, nav ul li.active {
+    background-color: rgba(0, 0, 0, 0); } /*  removes the default active and hover anchor states */
+
+
+.slides .caption {
+    background-color:rgba(0, 0, 0, 0.7);
+    padding: 0 23px; } /* gives the captions a sleek BLACK overlay */
+
+    .slides .caption {
+        position: absolute;
+        top: 0; bottom: 0; }
+
+.parallax-container.parallax-fluid {
+    height: 100%; } /* gives parallax-container a fluidy height */
+
+
+/* -----------------------------------
+ *  EVENTS PAGE
+ * ----------------------------------- */
+
+.calendar-toggle-button{
+    width:80px;height:80px;line-height:100px;
+    text-align:center;border-radius:80px;
+    position: absolute;top: -10%x; left: 10%;
+}
+.calendar-active-icon{
+    display:inline-block;width:20px;height:20px;text-align:center;border-radius:10px
+}
+
+
+/* -----------------------------------
+ *  FEATURES PAGE
+ * ----------------------------------- */
+#features .card-image img{
+    height: 200px;
+}

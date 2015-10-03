@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Naura Springs &middot; Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+        <link href="bower_components/materialize/dist/css/materialize.min.css" rel="stylesheet"/>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css"> -->
+        <link rel="stylesheet" href="bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+        <link href="css/styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="white" role="navigation">
+                <div class="nav-wrapper container">
+                    <a id="logo-container" href="#" class="brand-logo grey-text">Naura Springs</a>
+                    <ul class="right hide-on-med-and-down">
+                        <!-- tab indicator goes here -->
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                    </ul>
+
+                    <ul id="nav-mobile" class="side-nav">
+                        <li>
+                            <img src="favicon.ico" alt="Passionists-logo" height="120px" width="100%">
+                        </li>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                    </ul>
+                    <a href="#" data-activates="nav-mobile" class="button-collapse">
+                        <!-- <i class="material-icons">menu</i> -->
+                        <i class="zmdi zmdi-menu grey-text"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+         <!-- START WELCOME -->
+        <div id="events" class="grey darken-3 white-text" style="position: relative;background:url(img/large-outside-far2.jpg);background-position:center;background-size:cover;height:450px;margin-bottom:0">
+            <br>
+            <div class="section">
+                <br>
+                <div style="height:150px;" class="show-toggle hide-on-med-and-down"></div>
+            </div>
+
+            <!-- STARTS FAB -->
+            <a title="Book a room" class="btn-floating btn-large white toggleCalendar" style="position: absolute;bottom: -30px; right: 24px;">
+                <i class="zmdi zmdi-calendar grey-text text-darken-1"></i>
+                <i class="zmdi zmdi-close grey-text text-darken-1" style="display:none;"></i>
+            </a>
+            <!-- ENDS FAB -->
+        </div>
+
+        <div id="rooms" class="grey lighten-3 black-text">
+            <!-- <br><br> -->
+            <div class="container">
+                <!-- <div style="height:180px;display:non" class="show-toggl"></div> -->
+                <!-- <div style="height:180px;" class="hide-on-large-only"></div> -->
+                <div id="bookroom" class="row" style="position:relative;display:none">            
+                    <div class="col s12 m12 s4">
+                        <div class="car">
+                            <div class="card-content">
+                                <div>
+                                    <form class="col s12">
+                                        <!-- <br> -->
+                                        <div class="row">
+                                            <div class="col s12"> &nbsp;
+                                                <!-- <h4 class="section-head grey-text text-darken-1">Book a room</h4> -->
+                                            </div>
+                                            <div class="input-field col s12 l4">
+                                              <i class="zmdi zmdi-calendar prefix"></i>
+                                              <input id="checkin" type="text" class="validate">
+                                              <label for="checkin">Checkin Date</label>
+                                            </div>
+                                            <div class="input-field col s12 l4">
+                                              <i class="zmdi zmdi-calendar prefix"></i>
+                                              <input id="checkout" type="text" class="validate">
+                                              <label for="checkout">Checkout Date</label>
+                                            </div>
+                                            <!-- <div class="input-field col s12 l4">
+                                              <i class="zmdi zmdi-calendar prefix"></i>
+                                              <input id="checkout" type="text" class="validate">
+                                              <label for="checkout">Number of people</label>
+                                            </div> -->
+                                            <div class="input-field col s12 l2">
+                                                <select>
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-field col offset-s6 s6 l2">
+                                               <a class="waves-effect waves-ripple btn btn-raised gre white-text text-darken-1 right">
+                                                    <i class="zmdi zmdi-mail-send"></i>
+                                               </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row" style="padding-bottom:25px">
+                    <br><br>
+                    <div class="col s12 m12 s4 center">
+                        <h3 class="section-head grey-text text-darken-1">FEATURES</h3>
+                    </div>
+                    <br><br>
+                </div> -->
+            </div>
+        </div>
+
+        <div id="features" clas="grey lighten-3 black-text">
+            <div class="row" style="padding-bottom:25px">
+                    <br><br>
+                    <div class="col s12 m12 s4 center">
+                        <h3 class="section-head grey-text text-darken-1">FEATURES</h3>
+                    </div>
+                    <br><br>
+                </div>
+            <div class="container">
+                <div class="row"> 
+                    <div class="col l4 s12" style="position: relative;background:url(img/food.jpg);background-position:center;background-size:cover;height:250px;">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ENDS WELCOME -->
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="js/modernizr.min.js"></script>
+        <script src="js/imagesloaded.min.js"></script>
+        <script src="bower_components//materialize/dist/js/materialize.min.js"></script>
+        <script src="js/init.js"></script>
+     </body>
+ </html>
