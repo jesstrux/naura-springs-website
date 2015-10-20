@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Naura Springs &middot; Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+        <link href="bower_components/materialize/dist/css/materialize.min.css" rel="stylesheet"/>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css"> -->
+        <link rel="stylesheet" href="bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+        <link href="css/styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="white" role="navigation">
+                <div class="nav-wrapper container">
+                    <a id="logo-container" href="#" class="brand-logo grey-text">Naura Springs</a>
+                    <ul class="right hide-on-med-and-down">
+                        <!-- tab indicator goes here -->
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                    </ul>
+
+                    <ul id="nav-mobile" class="side-nav">
+                        <li>
+                            <img src="favicon.ico" alt="Passionists-logo" height="120px" width="100%">
+                        </li>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                    </ul>
+                    <a href="#" data-activates="nav-mobile" class="button-collapse">
+                        <!-- <i class="material-icons">menu</i> -->
+                        <i class="zmdi zmdi-menu grey-text"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+         <!-- START MAIN BANNER -->
+         <!-- <div class="slider">
+            <a title="Book a room" class="btn-floating btn-large white toggleCalendar" style="position: absolute;bottom: 15px; right: 24px;z-index:100">
+                <i class="zmdi zmdi-calendar grey-text text-darken-1"></i>
+                <i class="zmdi zmdi-close grey-text text-darken-1" style="display:none;"></i>
+            </a>
+
+            <ul class="slides">
+              <li>
+                <img src="img/large-outside-far2.jpg">
+              </li>
+              <li>
+                <img src="img/pool3.jpg">
+              </li>
+              <li>
+                <img src="img/food3.jpg">
+              </li>
+              <li>
+                <img src="img/dine.jpg">
+              </li>
+            </ul>
+        </div> -->
+        <!-- END MAIN BANNER -->
+        
+         <!-- START MAIN BANNER -->
+        <div class="grey darken-3 white-text" style="position: relative;background:url(img/large-outside-far2.jpg);background-position:center;background-size:cover;height:450px;margin-bottom:0">
+            <!-- STARTS FAB -->
+            <a title="Book a room" class="btn-floating btn-large white toggleCalendar" style="position: absolute;bottom: -30px; right: 24px;">
+                <i class="zmdi zmdi-calendar grey-text text-darken-1"></i>
+                <i class="zmdi zmdi-close grey-text text-darken-1" style="display:none;"></i>
+            </a>
+            <!-- ENDS FAB -->
+        </div>
+        <!-- END MAIN BANNER -->
+
+        <!-- START BOOK FORM -->
+        <div class="grey lighten-3 black-text">
+            <!-- <br><br> -->
+            <div class="container">
+                <!-- <div style="height:180px;display:non" class="show-toggl"></div> -->
+                <!-- <div style="height:180px;" class="hide-on-large-only"></div> -->
+                <div id="bookroom" class="row" style="position:relative;display:none">            
+                    <div class="col s12 m12 s4">
+                        <div class="car">
+                            <div class="card-content">
+                                <div>
+                                    <form class="col s12">
+                                        <!-- <br> -->
+                                        <div class="row">
+                                            <div class="col s12"> &nbsp;
+                                                <!-- <h4 class="section-head grey-text text-darken-1">Book a room</h4> -->
+                                            </div>
+                                            <div class="input-field col s12 l3">
+                                              <i class="zmdi zmdi-calendar prefix"></i>
+                                              <input id="checkin" type="text" class="validate">
+                                              <label for="checkin">Checkin Date</label>
+                                            </div>
+                                            <div class="input-field col s12 l3">
+                                              <i class="zmdi zmdi-calendar prefix"></i>
+                                              <input id="checkout" type="text" class="validate">
+                                              <label for="checkout">Checkout Date</label>
+                                            </div>
+                                            <div class="input-field col l3 s12">
+                                                <span class="left"><i class="zmdi zmdi-accounts prefix"></i></span>
+                                                <span class="col offset-s1 s11 offset-l2 l10">
+                                                    <select>
+                                                      <option>No. of Guests</option>
+                                                      <option value="1">1</option>
+                                                      <option value="2">2</option>
+                                                      <option value="3">3</option>
+                                                    </select>
+                                                </span>
+                                                <span></span>
+                                            </div>
+                                            <div class="input-field col offset-s6 s6 l2">
+                                               <a class="waves-effect waves-ripple btn btn-raised gre white-text text-darken-1 right">
+                                                    <i class="zmdi zmdi-mail-send"></i>
+                                               </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END BOOK FORM -->
+
+        <!-- http://www.youtube.com/embed/gljM8eQ_jY8?rel=0&showinfo=0&autoplay=1 -->
+
+        <!-- START WELCOME -->
+        <div id="restaurants" clas="grey lighten-3 black-text">
+            <div class="row" style="padding-bottom:25px">
+                    <br><br>
+                    <div class="col s12 m12 s4 center">
+                        <h3 class="section-head grey-text text-darken-1 a-header">
+                            Welcome to Naura Springs
+                            <i class="a-border zmdi zmdi-star red-text text-lighten-2"></i>
+                        </h3>
+                    </div>
+                    <br><br>
+                </div>
+            <div class="container">
+                <div class="row"> 
+                    <div class="col l6 s12 grey-text text-darken-1 flow-text" styl="font-size:5vw">
+                        <!-- <p class="flow-tex light" style="font-size:5vw"> -->
+                            Located on East Africa Community in the Heart of Arusha city, Naura Springs Hotel is quite close to the Arusha International Conference Center (AICC) and easily accessible(45 mins) from Kilimanjaro International Airport. It is also overlooking the magnificent Mt. Meru and Mt. Kilimanjaro.
+                        <!-- </p> -->
+                    </div>
+                    <div class="col l6 s12 gre darken-" style="padding:15px;">
+                        <div class="video-placeholder">
+                            <i class="zmdi zmdi-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END WELCOME -->
+
+        <!-- <div id="materialbox-overlay" class="" style="opacity: 1;">
+            <video class="materialboxed" controls autoplay src="img/dingi.mp4"></video>
+        </div> -->
+
+
+        <!-- START RESTAURANTS -->
+        <div id="restaurants" clas="grey lighten-3 black-text">
+            <div class="row" style="padding-bottom:25px">
+                    <br><br>
+                    <div class="col s12 m12 s4 center">
+                        <h3 class="section-head grey-text text-darken-1 a-header">
+                            RESTAURANTS
+                            <i class="a-border zmdi zmdi-star red-text text-lighten-2"></i>
+                        </h3>
+                    </div>
+                    <br><br>
+                </div>
+            <div class="container">
+                <div class="row"> 
+                    <div class="col l6 s12">
+                        <div style="overflow: hidden;padding:0;margin:0;" class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/dine.jpg" alt=" ">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Kilimanjaro <i class="mdi-navigation-more-vert right"></i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Kilimanjaro <i class="mdi-hardware-keyboard-arrow-down right"></i></span>
+                                <hr>
+                                <p class="flow-text">Located at the Hotel Lounge, the Kilimanjaro Restaurant has a seating capacity of 500 diners. It offers extensice continental cuisines.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l6 s12">
+                        <div style="overflow: hidden;padding:0;margin:0;" class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/restaurant.jpg" alt=" ">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Tarangire <i class="mdi-navigation-more-vert right"></i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Tarangire <i class="mdi-hardware-keyboard-arrow-down right"></i></span>
+                                <hr>
+                                <p class="flow-text">Next to the pool garden is the multi-themed Tarangire Restaurant, which offers, Italian, Chinese, Thai and Indian cuisines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END RESTAURANTS -->
+
+
+        <!-- START ROOMS -->
+        <div id="rooms" clas="grey lighten-3 black-text">
+            <div class="row" style="padding-bottom:25px">
+                    <br><br>
+                    <div class="col s12 m12 s4 center">
+                        <h3 class="section-head grey-text text-darken-1 a-header">
+                            ROOMS
+                            <i class="a-border zmdi zmdi-star orange-text text-lighten-2"></i>
+                        </h3>
+                    </div>
+                </div>
+            <div class="container">
+                        
+                        <br><br>
+                <div class="row"> 
+                    <div class="col l4 s12">
+                        <div style="overflow: hidden;padding:0;margin:0;" class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/roompres.jpg" alt=" ">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Presidential Suites <i class="mdi-navigation-more-vert right"></i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Presidential Suites <i class="mdi-hardware-keyboard-arrow-down right"></i></span>
+                                <hr>
+                                <p class="flow-text">At Naura Springs there are four presidential suites furnished and ready to be used to the fullest.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l4 s12">
+                        <div style="overflow: hidden;padding:0;margin:0;" class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/roomtwin2.jpg" alt=" ">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Executive Rooms <i class="mdi-navigation-more-vert right"></i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Executive Suites <i class="mdi-hardware-keyboard-arrow-down right"></i></span>
+                                <hr>
+                                <p class="flow-text">Other than the presidential ones, Naura Springs also has a number of executive suites adding up to 40.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l4 s12">
+                        <div style="overflow: hidden;padding:0;margin:0;" class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/room.jpg" alt=" ">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Standard Rooms <i class="mdi-navigation-more-vert right"></i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Standard Rooms <i class="mdi-hardware-keyboard-arrow-down right"></i></span>
+                                <hr>
+                                <p class="flow-text">Are you looking for just a simple room with no hassles, we provide you with that too.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <p class="flow-text">
+                    The hotel has 120 rooms which include standard rooms, executive rooms, family suites and 4 presidential suites.
+                </p>
+
+                <p class="flow-text">
+                    All rooms have digital satellite TV’s, Internet connection, direct dial out facilities, mini bars, safety deposit boxes, tea or coffee making facilities. Spacious bathrooms with Jacuzzis and shower boxes. All  rooms face magnificent Mt. Meru and Mt. Kilimanjaro.
+                </p> -->
+            </div>
+        </div>
+        <!-- END ROOMS -->
+
+        <!-- START FACILITIES -->
+        <div id="facilities" clas="grey lighten-3 black-text">
+            <div class="row" style="padding-bottom:25px">
+                    <br><br>
+                    <div class="col s12 m12 s4 center">
+                        <h3 class="section-head grey-text text-darken-1 a-header">
+                            FACILITIES
+                            <i class="a-border zmdi zmdi-star green-text text-lighten-2"></i>
+                        </h3>
+                    </div>
+                    <br><br>
+                </div>
+            <div class="container">
+                <div class="row caption-images"> 
+                    <div class="col l4 s12">
+                        <a href="oldlook.html">
+                             <div class="card-content">
+                                <img src="img/pool3.jpg" clasy="materialboxed" data-caption="Health &amp; Fitness - Outdoors Pool">
+                                <div class="flow-text caption">Health and Fitness</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l4 s12">
+                        <a href="oldlook.html">
+                             <div class="card-content">
+                                <img src="img/bar.jpg" clas="materialboxed" data-caption="Mini Bar">
+                                <div class="flow-text caption">Mini Bar</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l4 s12">
+                        <a href="oldlook.html">
+                             <div class="card-content">
+                                <img src="img/banner3.jpg" clas="materialboxed" data-caption="Some Forlorn Tulips">
+                                <div class="flow-text caption">Forlorn Tulips</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+        <!-- END FACILITIES -->
+
+        <!-- START GALLERY -->
+        <div id="gallery" clas="grey lighten-3 black-text">
+            <div class="row" style="padding-bottom:25px">
+                <br><br>
+                <div class="col s12 m12 s4 center">
+                    <h3 class="section-head grey-text text-darken-1 a-header">
+                        GALLERY
+                        <i class="a-border zmdi zmdi-star red-text text-lighten-2"></i>
+                    </h3>
+                </div>
+            </div>
+            <span class="scroll-arrow prev">
+                <i class="zmdi zmdi-chevron-left"></i>
+            </span>
+            <span class="scroll-arrow available next">
+                <i class="zmdi zmdi-chevron-right"></i>
+            </span>
+            <br><br>
+            <div class="section">
+                <div id="images" class="row"> 
+                    <img class="materialboxe" src="img/dine.jpg" alt=" " data-caption="La cuisine">
+                    <img class="materialboxe" src="img/pool.jpg" alt=" " data-caption="La pool">
+                    <img class="materialboxe" src="img/wine.jpg" alt=" " data-caption="La french winery">
+                    <img class="materialboxe" src="img/dine2.jpg" alt=" " data-caption="La table place">
+                    <img class="materialboxe" src="img/bar.jpg" alt=" ">
+                    <img class="materialboxe" src="img/food5.jpg" alt=" ">
+                    <img class="materialboxe" src="img/food.jpg" alt=" ">
+                    <img class="materialboxe" src="img/juice.jpg" alt=" ">
+                    <img class="materialboxe" src="img/spice.jpg" alt=" ">
+                    <img class="materialboxe" src="img/restaurant.jpg" alt=" ">
+                </div>
+            </div>
+            <br><br>
+        </div>
+        <!-- END GALLERY -->
+
+<footer class="page-footer black">
+    <!-- STARTS SUBSCRIBE SECTION -->
+    <div class="container">
+        <div class="row white-text">
+            <div class="col s6 m7 left">
+                <h3>Get Our Newsletter</h3>
+                <p class="left-align">
+                    News, events, or goodies&hellip; Be the first to know.
+                </p>
+                <div class="row grey-text">
+                    <div class="input-field col m8 s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email" data-error="Whoops! Please use this format: username@example.com">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m8 s12">
+                        <a class="waves-effect waves-ripple btn white black-text right">Sign up</a></div>
+                </div>
+            </div>
+            <div class="col s6 m5 contacts-section">
+                <h3 class="white-text">We'd love to hear from you</h3>
+                <ul>
+                    <li><i class="zmdi zmdi-phone"></i>
+                        <span> +255 (0) 755 849 191 </span> </li>
+
+                    <li><i class="zmdi zmdi-email"></i>
+                        <span> info@naurasprings.org </span> </li>
+
+                    <li><i class="zmdi zmdi-pin"></i>
+                        <span>Area 51, 123 Street, Sanawari, Arusha </span> </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- ENDS SUBSCRIBE SECTION -->
+
+    <div class="footer-copyright">
+        <div class="container">
+            <span class="text-lighten-3">
+                &copy; 2015 Naura Springs Hotel. All rights reserved.
+            </span>
+            <span class="social-links right">
+                <a href="#">
+                    <i class="zmdi zmdi-instagram" data-caption="instagram"></i></a>
+
+                <a href="#">
+                    <i class="zmdi zmdi-twitter" data-caption="twitter"></i></a>
+
+                <a href="#">
+                    <i class="zmdi zmdi-google-plus" data-caption="google-plus"></i></a>
+
+                <a href="#">
+                    <i class="zmdi zmdi-facebook" data-caption="facebook"></i></a>
+
+            </span>
+        </div>
+    </div>
+</footer>
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="js/modernizr.min.js"></script>
+        <script src="js/imagesloaded.min.js"></script>
+        <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+        <script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+        <script src="bower_components/jquery.serialscroll/jquery.serialScroll.min.js"></script>
+        <script src="js/init.js"></script>
+     </body>
+ </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Effect</title>
+  <!-- <link href="bower_components/materialize/dist/css/materialize.min.css" rel="stylesheet"/> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css"> -->
+  <link rel="stylesheet" href="bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+  <div class='header'>
+    <div class='header-content'>
+      <h1>Material Search Effect</h1>
+      <h2>Usign CSS Transitions</h2>
+    </div>
+    <div class='control' tabindex='1'>
+      <div class='btn'></div>
+      <i class='icon-search zmdi zmdi-search'></i>
+    </div>
+  </div>
+  <i class='icon-close zmdi zmdi-close'></i>
+  <div class='form'>
+    <input class='input-search' placeholder='Start Typing' type='text'>
+    <input type="checkbox" id="switch" />
+    <label for="switch" class="label">Incognito</label>
+  </div>
+  <div class='wrapper'>
+    <div id='h2'>by Luca Dimola</div>
+  </div>
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components//materialize/dist/js/materialize.min.js"></script>
+<script src="js/init.js"></script>
+<script>
+  $('.control').click( function(){
+    $('body').addClass('mode-search');
+    $('.input-search').focus();
+  });
+
+  $('.icon-close').click( function(){
+    $('body').removeClass('mode-search');
+  });
+</script>
+</html>
